@@ -5,22 +5,32 @@
         <p class="perm-title">필수 권한 허용 안내</p>
         <p class="perm-subtitle">아래와 같은 이유로 권한 허용이 필요합니다.</p>
         <p class="perm-description">
-          회원 가입시 첨부하는 파일 직접 촬영 후 첨부<br />
-          (사업자등록증, 매장 이미지, 신분증 등)<br />
+          회원 가입시 갤러리 파일 불러와서 확인 및
+          <br />첨부
+          <span class="perm-descrip"
+            >(사업자등록증, 매장 이미지, 신분증 등)</span
+          ><br />
           회원가입 및 서비스 이용에 반드시 필요한<br />
-          권한으로 설정되지 않을 경우 서비스 이용이<br />
-          불가합니다.
+          권한으로 설정되지 않을 경우 서비스 이용이<br />불가합니다.
         </p>
       </div>
       <div class="perm-action">
         <button class="action no">닫기</button>
-        <button class="action re">권한재요청</button>
+        <button class="action re" @click="goBack">권한재요청</button>
       </div>
     </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+
+function goBack() {
+  router.push('permissions02');
+}
+</script>
 
 <style scoped>
 .permission03 {
@@ -44,6 +54,9 @@
   display: flex;
   flex-direction: column;
 }
+.permission03 .group .perm-message {
+  margin: 30px 0;
+}
 
 .permission03 .group .perm-message .perm-title {
   color: #222;
@@ -54,8 +67,9 @@
   font-style: normal;
   font-weight: 600;
   line-height: 140%;
+  padding-bottom: 10px;
 }
-.permission03 .group .perm-message .perm-title .popup-subtitle {
+.permission03 .group .perm-message .perm-subtitle {
   color: #222;
   text-align: center;
   font-family: 'Pretendard GOV';
@@ -63,42 +77,53 @@
   font-style: normal;
   font-weight: 600;
   line-height: 150%;
-  padding-top: 10px;
+  padding-bottom: 20px;
+  opacity: 0.8;
 }
-
-.popup-description {
-  font-size: 13px;
+.permission03 .group .perm-message .perm-description {
+  opacity: 0.8;
+  color: #222;
+  font-family: 'Pretendard GOV';
+  font-size: 16px;
+  font-style: normal;
   font-weight: 400;
+  line-height: 150%;
+}
+.permission03 .group .perm-message .perm-description .perm-descrip {
+  opacity: 0.8;
   color: #666;
-  line-height: 1.6;
-  word-break: keep-all;
+  font-family: 'Pretendard GOV';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
 }
 
-.popup-buttons {
+.permission03 .group .perm-action {
   display: flex;
   justify-content: space-between;
   gap: 8px;
-  margin-top: 8px;
+  width: 100%;
+  padding: 8px 0px 0px 0px;
 }
 
-.btn {
-  flex: 1;
+.permission03 .group .perm-action .action {
+  width: 100%;
   height: 48px;
-  font-size: 15px;
-  font-weight: 600;
-  border: none;
+  color: #222;
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
   border-radius: 8px;
-  cursor: pointer;
-}
-
-.btn.cancel {
+  border: 1px solid #222;
   background: #fff;
-  border: 1px solid #ccc;
-  color: #1e1e1e;
 }
-
-.btn.confirm {
-  background: #1e1e1e;
+.permission03 .group .perm-action .action:hover {
+  background: #222;
   color: #fff;
 }
 </style>

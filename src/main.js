@@ -3,7 +3,7 @@ import { createPinia } from "pinia";
 import App from "./App.vue";
 import router from "./router";
 import "./assets/reset.css";
-import "./font/PretendardFont.css";
+import "./assets/font/font.css";
 
 const app = createApp(App);
 

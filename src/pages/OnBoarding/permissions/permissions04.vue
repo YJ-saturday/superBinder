@@ -1,20 +1,31 @@
 <template>
   <div class="permission04">
     <div class="group">
-      <img src="/src/img/permissions/picture.png" alt="camera-icon" />
+      <img src="/src/assets/img/Permissions/picture.png" alt="camera-icon" />
       <p class="perm-message">
         슈퍼바인더에서 기기의 사진, 파일에<br />
         엑세스하도록 허용하시겠습니까?
       </p>
       <div class="perm-action">
-        <button class="action ok">허용</button>
-        <button class="action no">거부</button>
+        <button class="action ok" @click="goNextPage">허용</button>
+        <button class="action no" @click="goReRequest">거부</button>
       </div>
     </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+
+function goNextPage() {
+  router.push('permissions06');
+}
+function goReRequest() {
+  router.push('permissions05');
+}
+</script>
 
 <style scoped>
 .permission04 {

@@ -2,7 +2,7 @@
   <div class="splash">
     <div class="splash-inner">
       <img
-        src="/src/img/splashScreenImg/VectorGig.png"
+        src="/src/assets/img/splashScreenImg/VectorGig.png"
         alt="app-logo-big"
         class="splash-image"
       />

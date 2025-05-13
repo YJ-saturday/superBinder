@@ -2,7 +2,7 @@
   <div class="splash">
     <div class="splash-inner">
       <img
-        src="/src/img/splashScreenImg/vectorSmallColor.png"
+        src="/src/assets/img/splashScreenImg/vectorSmallColor.png"
         alt="app-logo-small-color"
         class="splash-image"
       />

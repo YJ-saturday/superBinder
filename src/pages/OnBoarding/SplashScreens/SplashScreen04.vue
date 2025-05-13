@@ -2,8 +2,13 @@
   <div class="splash">
     <div class="splash-inner">
       <img
-        src="/src/img/splashScreenImg/vectorSmallColorName.png"
-        alt="app-logo-small-name"
+        src="/src/assets/img/splashScreenImg/vectorSmallColor.png"
+        alt="app-logo-small-color"
+        class="splash-image"
+      />
+      <img
+        src="/src/assets/img/splashScreenImg/vectorSmallColorName.png"
+        alt="app-logo-small-color-name"
         class="splash-image"
       />
     </div>
@@ -28,8 +33,10 @@
   box-sizing: border-box;
   height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }
 
 .splash .splash-inner .splash-image {
