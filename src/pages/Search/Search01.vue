@@ -22,30 +22,17 @@
       <div class="title">
         <p>최근 검색어</p>
       </div>
-      <ul class="croll">
-        <li>
-          <p>화장품</p>
-          <img src="/src/assets/img/icon/cross.svg" alt="" />
-        </li>
-        <li>
-          <p>봄 자켓</p>
-          <img src="/src/assets/img/icon/cross.svg" alt="" />
-        </li>
-        <li>
-          <p>호텔수건</p>
-          <img src="/src/assets/img/icon/cross.svg" alt="" />
-        </li>
-        <li>
-          <p>수저</p>
-          <img src="/src/assets/img/icon/cross.svg" alt="" />
-        </li>
-      </ul>
+      <div class="items">
+        <p>최근 검색어 내역이 없습니다.</p>
+      </div>
     </div>
     <div class="recent-product">
       <div class="title">
         <p>최근 본 상품</p>
       </div>
-      <ProductCard :products="items1" />
+      <div class="items">
+        <p>최근 본 상품이 없습니다.</p>
+      </div>
     </div>
     <div class="popular-search">
       <div class="title">
@@ -120,62 +107,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
-import ProductCard from '@/common/ProductCardSearch.vue';
 import BannerCard from '@/common/BannerCard.vue';
-
-const items1 = [
-  {
-    id: 1,
-    img: '/src/assets/img/productCard/bannerImg03.png',
-    category: '비타리움',
-    title: '보습, 보호, 알레르기 만능!!',
-    subtitle: '포포크림 3종',
-    price: 16000,
-    discount: 20,
-    stock: 9000,
-  },
-  {
-    id: 2,
-    img: '/src/assets/img/productCard/bannerImg04.png',
-    category: '비타리움',
-    title: '보습, 보호, 알레르기 만능!!',
-    subtitle: '포포크림 3종',
-    price: 16000,
-    discount: 20,
-    stock: 5,
-  },
-  {
-    id: 3,
-    img: '/src/assets/img/productCard/bannerImg03.png',
-    category: '비타리움',
-    title: '보습, 보호, 알레르기 만능!!',
-    subtitle: '포포크림 3종',
-    price: 16000,
-    discount: 20,
-    stock: 9000,
-  },
-  {
-    id: 4,
-    img: '/src/assets/img/productCard/bannerImg04.png',
-    category: '비타리움',
-    title: '보습, 보호, 알레르기 만능!!',
-    subtitle: '포포크림 3종',
-    price: 16000,
-    discount: 20,
-    stock: 9000,
-  },
-  {
-    id: 5,
-    img: '/src/assets/img/productCard/bannerImg03.png',
-    category: '비타리움',
-    title: '보습, 보호, 알레르기 만능!!',
-    subtitle: '포포크림 3종',
-    price: 16000,
-    discount: 20,
-    stock: 9000,
-  },
-];
 </script>
 <style scoped>
 .header {
@@ -261,50 +193,6 @@ const items1 = [
   line-height: 20px; /* 142.857% */
   letter-spacing: -0.14px;
 }
-/* recent-searches */
-.croll {
-  display: flex;
-  gap: 4px;
-  overflow-x: auto;
-  overflow-y: hidden;
-  -webkit-overflow-scrolling: touch;
-  padding: 0;
-  margin-top: 21px;
-  list-style: none;
-}
-.croll li {
-  width: auto;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 4px;
-  flex: 0 0 auto;
-  justify-content: center;
-  align-items: center;
-  padding: 6px 12px 6px 16px;
-  border-radius: 18px;
-  border: 1px solid #bbb;
-  background: #fff;
-  white-space: nowrap;
-}
-.croll::-webkit-scrollbar {
-  display: none;
-}
-.croll li p {
-  color: #222;
-  font-family: Pretendard;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%; /* 19.6px */
-  letter-spacing: -0.14px;
-}
-.croll li img {
-  width: 14px;
-  height: 14px;
-}
-
 .popular-search .title {
   display: flex;
   align-items: center;

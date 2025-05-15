@@ -120,18 +120,6 @@
             </label>
           </li>
         </ul>
-
-        <div class="pay-da">
-          <div>
-            <p class="pay-da-L1">현재 보유 페이</p>
-            <span class="pay-da-R1">500,000원</span>
-          </div>
-          <div>
-            <p class="pay-da-L2">현재 보유 페이</p>
-            <span class="pay-da-R2">-54,454원</span>
-          </div>
-        </div>
-        <button class="bottom">슈퍼 페이 충전</button>
       </div>
 
       <div class="pay-result">
@@ -167,12 +155,6 @@
       <div class="warning">
         <div class="title">미출고시 조치방법</div>
         <ul>
-          <li>
-            <label class="style_radio">
-              <input type="radio" />
-              <p>슈퍼페이로 환급</p>
-            </label>
-          </li>
           <li>
             <label class="style_radio">
               <input type="radio" />

@@ -12,7 +12,7 @@
       <ul>
         <li>
           <label for="con01-1" class="input-box">배송지 별칭칭</label>
-          <input type="text" id="con01-1" placeholder="가양 본점점" />
+          <input type="text" id="con01-1" placeholder="점" />
         </li>
         <li>
           <label for="con01-2" class="input-box">받는 분</label>

@@ -25,166 +25,168 @@
         <li>최근 본</li>
       </ul>
     </div>
-    <div class="main"></div>
-  </div>
-  <div class="con03">
-    <div class="wrap">
-      <div class="tit-btns">
-        <button class="btn1">전체</button>
-        <button class="btn2">식료품</button>
-        <button class="btn3">전자기기</button>
-      </div>
-      <div class="item-btns">
-        <div>
-          <label class="style_checkbox">
-            <input type="checkbox" />
-            <img
-              src="/src/assets/img/cart/checkbox_active.png"
-              alt="체크박스"
-            />
-          </label>
-          <p>총 <span>4</span>건</p>
+    <div class="main">
+      <div class="con03">
+        <div class="wrap">
+          <div class="tit-btns">
+            <button class="btn1">전체</button>
+            <button class="btn2">식료품</button>
+            <button class="btn3">전자기기</button>
+          </div>
+          <div class="item-btns">
+            <div>
+              <label class="style_checkbox">
+                <input type="checkbox" />
+                <img
+                  src="/src/assets/img/cart/checkbox_active.png"
+                  alt="체크박스"
+                />
+              </label>
+              <p>총 <span>4</span>건</p>
+            </div>
+            <button class="deliete">선택 삭제</button>
+          </div>
         </div>
-        <button class="deliete">선택 삭제</button>
+        <!-- -->
+        <div class="item-wrap">
+          <ul>
+            <li>
+              <div class="product_card">
+                <div class="product_header">
+                  <label class="style_checkbox">
+                    <input type="checkbox" />
+                    <img
+                      src="/src/assets/img/cart/checkbox_active.png"
+                      alt="체크박스"
+                    />
+                  </label>
+                  <span class="buy_count_label">4회구매</span>
+                  <div class="product_header_option">
+                    <!-- 활성화시 버튼에 active class 추가 -->
+                    <button class="pin"></button>
+                    <button class="zzim active"></button>
+                  </div>
+                </div>
+                <div class="product_box">
+                  <img
+                    class="product_image"
+                    src="/src/assets/img/cart/product.png"
+                    alt="마스타크린"
+                  />
+                  <div class="product_info">
+                    <div class="brand">마스타크린</div>
+                    <div class="product_title">2P 블럭 수세미</div>
+                    <div class="stock">9,000개 남음</div>
+                  </div>
+                </div>
+
+                <div class="price">126,000<span>원</span></div>
+              </div>
+            </li>
+            <li>
+              <div class="product_card">
+                <div class="product_header">
+                  <label class="style_checkbox">
+                    <input type="checkbox" />
+                    <img
+                      src="/src/assets/img/cart/checkbox_active.png"
+                      alt="체크박스"
+                    />
+                  </label>
+                  <span class="buy_count_label">4회구매</span>
+                  <div class="product_header_option">
+                    <!-- 활성화시 버튼에 active class 추가 -->
+                    <button class="pin"></button>
+                    <button class="zzim active"></button>
+                  </div>
+                </div>
+                <div class="product_box">
+                  <img
+                    class="product_image"
+                    src="/src/assets/img/cart/product.png"
+                    alt="마스타크린"
+                  />
+                  <div class="product_info">
+                    <div class="brand">마스타크린</div>
+                    <div class="product_title">2P 블럭 수세미</div>
+                    <div class="stock">9,000개 남음</div>
+                  </div>
+                </div>
+
+                <div class="price">126,000<span>원</span></div>
+              </div>
+            </li>
+            <li>
+              <div class="product_card">
+                <div class="product_header">
+                  <label class="style_checkbox">
+                    <input type="checkbox" />
+                    <img
+                      src="/src/assets/img/cart/checkbox_active.png"
+                      alt="체크박스"
+                    />
+                  </label>
+                  <span class="buy_count_label">4회구매</span>
+                  <div class="product_header_option">
+                    <!-- 활성화시 버튼에 active class 추가 -->
+                    <button class="pin"></button>
+                    <button class="zzim active"></button>
+                  </div>
+                </div>
+                <div class="product_box">
+                  <img
+                    class="product_image"
+                    src="/src/assets/img/cart/product.png"
+                    alt="마스타크린"
+                  />
+                  <div class="product_info">
+                    <div class="brand">마스타크린</div>
+                    <div class="product_title">2P 블럭 수세미</div>
+                    <div class="stock">9,000개 남음</div>
+                  </div>
+                </div>
+
+                <div class="price">126,000<span>원</span></div>
+              </div>
+            </li>
+            <li>
+              <div class="product_card">
+                <div class="product_header">
+                  <label class="style_checkbox">
+                    <input type="checkbox" />
+                    <img
+                      src="/src/assets/img/cart/checkbox_active.png"
+                      alt="체크박스"
+                    />
+                  </label>
+                  <span class="buy_count_label">4회구매</span>
+                  <div class="product_header_option">
+                    <!-- 활성화시 버튼에 active class 추가 -->
+                    <button class="pin"></button>
+                    <button class="zzim active"></button>
+                  </div>
+                </div>
+                <div class="product_box">
+                  <img
+                    class="product_image"
+                    src="/src/assets/img/cart/product.png"
+                    alt="마스타크린"
+                  />
+                  <div class="product_info">
+                    <div class="brand">마스타크린</div>
+                    <div class="product_title">2P 블럭 수세미</div>
+                    <div class="stock">9,000개 남음</div>
+                  </div>
+                </div>
+
+                <div class="price">126,000<span>원</span></div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-    <!-- -->
-    <div class="item-wrap">
-      <ul>
-        <li>
-          <div class="product_card">
-            <div class="product_header">
-              <label class="style_checkbox">
-                <input type="checkbox" />
-                <img
-                  src="/src/assets/img/cart/checkbox_active.png"
-                  alt="체크박스"
-                />
-              </label>
-              <span class="buy_count_label">4회구매</span>
-              <div class="product_header_option">
-                <!-- 활성화시 버튼에 active class 추가 -->
-                <button class="pin"></button>
-                <button class="zzim active"></button>
-              </div>
-            </div>
-            <div class="product_box">
-              <img
-                class="product_image"
-                src="/src/assets/img/cart/product.png"
-                alt="마스타크린"
-              />
-              <div class="product_info">
-                <div class="brand">마스타크린</div>
-                <div class="product_title">2P 블럭 수세미</div>
-                <div class="stock">9,000개 남음</div>
-              </div>
-            </div>
 
-            <div class="price">126,000<span>원</span></div>
-          </div>
-        </li>
-        <li>
-          <div class="product_card">
-            <div class="product_header">
-              <label class="style_checkbox">
-                <input type="checkbox" />
-                <img
-                  src="/src/assets/img/cart/checkbox_active.png"
-                  alt="체크박스"
-                />
-              </label>
-              <span class="buy_count_label">4회구매</span>
-              <div class="product_header_option">
-                <!-- 활성화시 버튼에 active class 추가 -->
-                <button class="pin"></button>
-                <button class="zzim active"></button>
-              </div>
-            </div>
-            <div class="product_box">
-              <img
-                class="product_image"
-                src="/src/assets/img/cart/product.png"
-                alt="마스타크린"
-              />
-              <div class="product_info">
-                <div class="brand">마스타크린</div>
-                <div class="product_title">2P 블럭 수세미</div>
-                <div class="stock">9,000개 남음</div>
-              </div>
-            </div>
-
-            <div class="price">126,000<span>원</span></div>
-          </div>
-        </li>
-        <li>
-          <div class="product_card">
-            <div class="product_header">
-              <label class="style_checkbox">
-                <input type="checkbox" />
-                <img
-                  src="/src/assets/img/cart/checkbox_active.png"
-                  alt="체크박스"
-                />
-              </label>
-              <span class="buy_count_label">4회구매</span>
-              <div class="product_header_option">
-                <!-- 활성화시 버튼에 active class 추가 -->
-                <button class="pin"></button>
-                <button class="zzim active"></button>
-              </div>
-            </div>
-            <div class="product_box">
-              <img
-                class="product_image"
-                src="/src/assets/img/cart/product.png"
-                alt="마스타크린"
-              />
-              <div class="product_info">
-                <div class="brand">마스타크린</div>
-                <div class="product_title">2P 블럭 수세미</div>
-                <div class="stock">9,000개 남음</div>
-              </div>
-            </div>
-
-            <div class="price">126,000<span>원</span></div>
-          </div>
-        </li>
-        <li>
-          <div class="product_card">
-            <div class="product_header">
-              <label class="style_checkbox">
-                <input type="checkbox" />
-                <img
-                  src="/src/assets/img/cart/checkbox_active.png"
-                  alt="체크박스"
-                />
-              </label>
-              <span class="buy_count_label">4회구매</span>
-              <div class="product_header_option">
-                <!-- 활성화시 버튼에 active class 추가 -->
-                <button class="pin"></button>
-                <button class="zzim active"></button>
-              </div>
-            </div>
-            <div class="product_box">
-              <img
-                class="product_image"
-                src="/src/assets/img/cart/product.png"
-                alt="마스타크린"
-              />
-              <div class="product_info">
-                <div class="brand">마스타크린</div>
-                <div class="product_title">2P 블럭 수세미</div>
-                <div class="stock">9,000개 남음</div>
-              </div>
-            </div>
-
-            <div class="price">126,000<span>원</span></div>
-          </div>
-        </li>
-      </ul>
-    </div>
     <div class="con04">
       <button>3건 주문하기</button>
     </div>
@@ -283,7 +285,6 @@ const activeTab = ref(0);
 }
 .main {
   width: 100%;
-  height: 556px;
   display: flex;
   gap: 10px;
   flex-direction: column;

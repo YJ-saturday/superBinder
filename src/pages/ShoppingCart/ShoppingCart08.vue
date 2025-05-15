@@ -120,22 +120,77 @@
             </label>
           </li>
         </ul>
-
-        <div class="pay-da">
-          <div>
-            <p class="pay-da-L1">현재 보유 페이</p>
-            <span class="pay-da-R1">500,000원</span>
-          </div>
-          <div>
-            <p class="pay-da-L2">현재 보유 페이</p>
-            <span class="pay-da-R2">-54,454원</span>
-          </div>
-        </div>
-        <button class="bottom">슈퍼 페이 충전</button>
       </div>
 
+      <div class="card-con">
+        <div class="card-title">카드결제</div>
+        <div class="card-swiper">
+          <swiper
+            :slides-per-view="1.3"
+            :space-between="16"
+            free-mode
+            class="mySwiper"
+          >
+            <!-- 1번째 카드 -->
+            <swiper-slide>
+              <div class="card">
+                <div class="card-item">
+                  <img
+                    src="/src/assets/img/paymentManagement/cardIcon1.png"
+                    alt=""
+                  />
+                  <div class="card-main">
+                    <h1>CARD</h1>
+                    <div class="card-txt">
+                      <p>체크</p>
+                      <img src="/src/assets/img/icon/silverDot.svg" alt="" />
+                      <span>9876</span>
+                    </div>
+                    <div class="card-icon">
+                      <p>일시불</p>
+                      <img src="/src/assets/img/icon/bottomarrow.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </swiper-slide>
+
+            <!-- 2번째 카드 -->
+            <swiper-slide>
+              <div class="card">
+                <div class="card-item">
+                  <img
+                    src="/src/assets/img/paymentManagement/cardIcon2.png"
+                    alt=""
+                  />
+                  <div class="card-main">
+                    <h1>CARD</h1>
+                    <div class="card-txt">
+                      <p>체크</p>
+                      <img src="/src/assets/img/icon/silverDot.svg" alt="" />
+                      <span>9876</span>
+                    </div>
+                    <div class="card-icon">
+                      <p>일시불</p>
+                      <img src="/src/assets/img/icon/bottomarrow.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </swiper-slide>
+
+            <!-- 카드 등록하기 -->
+            <swiper-slide>
+              <div class="card-add">
+                <img src="/src/assets/img/icon/oneAddIcon.svg" alt="" />
+                <p>카드 등록하기</p>
+              </div>
+            </swiper-slide>
+          </swiper>
+        </div>
+      </div>
       <div class="pay-result">
-        <div class="title">결제정보</div>
+        <div class="result-title">결제정보</div>
         <ul>
           <li>
             <p>상품 금액</p>
@@ -167,12 +222,6 @@
       <div class="warning">
         <div class="title">미출고시 조치방법</div>
         <ul>
-          <li>
-            <label class="style_radio">
-              <input type="radio" />
-              <p>슈퍼페이로 환급</p>
-            </label>
-          </li>
           <li>
             <label class="style_radio">
               <input type="radio" />
@@ -208,7 +257,10 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/swiper-bundle.css';
+</script>
 
 <style scoped>
 .header {
@@ -575,12 +627,11 @@
 }
 .con03 .pay-result {
   width: 100%;
-  height: 247px;
   padding: 16px 24px;
   border-radius: 30px;
   background: #f5f5f5;
 }
-.con03 .pay-result .title {
+.con03 .pay-result .result-title {
   margin-bottom: 20px;
   color: #222;
   font-feature-settings: 'liga' off, 'clig' off;
@@ -707,5 +758,111 @@
   border-radius: 8px;
   background: #c2c2c2;
   border: none;
+}
+
+/* swiper */
+.card-swiper {
+}
+.mySwiper {
+  overflow: visible;
+}
+.swiper-slide {
+  width: auto;
+}
+.card {
+  width: 240px;
+  padding: 18px 16px;
+  border-radius: 20px;
+  border: 1px solid #c2c2c2;
+  background: #fff;
+}
+.card-title {
+  color: #222;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Pretendard;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 25.2px */
+  margin-bottom: 10px;
+}
+.card-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.card-item img {
+  width: 37px;
+  height: 57px;
+}
+.card-item h1 {
+  color: #222;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 19.6px */
+}
+.card-txt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 6px;
+  color: #666;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 19.6px */
+}
+.card-txt img {
+  width: 4px;
+  height: 4px;
+}
+.card-icon {
+  display: flex;
+  align-items: center;
+}
+.card-icon p {
+  color: #666;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 19.6px */
+}
+.card-icon img {
+  width: 16px;
+  height: 16px;
+}
+.card-add {
+  width: 240px;
+  height: 102px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 16px;
+  border-radius: 20px;
+  border: 1px solid #c2c2c2;
+  background: #fff;
+}
+.card-add img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 6px;
+}
+.card-add p {
+  color: #222;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 19.6px */
 }
 </style>
