@@ -29,14 +29,14 @@
         </div>
 
         <div class="sub-content" v-if="step >= 1">
-          <label for="phone" class="biz-label">전화번호</label>
+          <label for="ceo-name" class="biz-label">대표자명</label>
           <input
-            id="phone"
+            id="ceo-name"
             class="biz-input"
-            placeholder="01012345678"
-            maxlength="11"
-            v-model="phone"
-            @input="onlyNumbers($event, phone)"
+            placeholder="이름 입력"
+            maxlength="30"
+            v-model="ceoName"
+            @input="onlyKoreanOrEnglish($event, ceoName)"
             @blur="isTouched = true"
           />
         </div>
@@ -62,14 +62,14 @@
         </div>
 
         <div class="sub-content" v-if="step >= 3">
-          <label for="ceo-name" class="biz-label">대표자명</label>
+          <label for="phone" class="biz-label">전화번호</label>
           <input
-            id="ceo-name"
+            id="phone"
             class="biz-input"
-            placeholder="이름 입력"
-            maxlength="30"
-            v-model="ceoName"
-            @input="onlyKoreanOrEnglish($event, ceoName)"
+            placeholder="01012345678"
+            maxlength="11"
+            v-model="phone"
+            @input="onlyNumbers($event, phone)"
             @blur="isTouched = true"
           />
         </div>

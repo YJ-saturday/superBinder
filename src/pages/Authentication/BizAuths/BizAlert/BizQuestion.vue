@@ -85,6 +85,8 @@ function cancel() {
   font-weight: 500;
   line-height: 22px;
   padding: 8px;
+  border: none;
+  border-radius: 8px;
   background: #222;
 }
 </style>

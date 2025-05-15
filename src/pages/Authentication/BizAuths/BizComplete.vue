@@ -1,9 +1,9 @@
 <template>
   <div class="biz-complete-title">
-    <div class="biz-complete-header">
+    <div class="header">
       <img
         src="/src/assets/img/Authentication/leftAllow.png"
-        alt="leftAllow"
+        alt="뒤로가기"
         @click="goBack"
       />
       <span>회원가입 완료</span>
@@ -41,25 +41,29 @@ function goNextPage() {
   height: 100vh;
   position: relative;
 }
-.biz-complete-title .biz-complete-header {
+.header {
   height: 62px;
   padding: 13px 16px;
   display: flex;
   align-items: center;
+  position: relative;
 }
-.biz-complete-title .biz-complete-header img {
+.header img {
   width: 24px;
   height: 24px;
+  cursor: pointer;
 }
-.biz-complete-title .biz-complete-header span {
+.header span {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   color: #212121;
   font-feature-settings: 'liga' off, 'clig' off;
   font-family: Pretendard;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
-  line-height: 28px;
-  margin-left: 112.5px;
+  line-height: 28px; /* 140% */
 }
 .biz-complete-title .main-content {
   display: flex;

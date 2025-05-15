@@ -1,9 +1,9 @@
 <template>
   <div class="biz-auth-title">
-    <div class="biz-auth-header">
+    <div class="header">
       <img
         src="/src/assets/img/Authentication/leftAllow.png"
-        alt=""
+        alt="뒤로가기"
         @click="goBack"
       />
       <span>회원가입</span>
@@ -172,23 +172,27 @@ const isNextDisabled = computed(
 .biz-auth-title {
   width: 100%;
 }
-.biz-auth-title .biz-auth-header {
+.header {
   height: 62px;
   padding: 13px 16px;
   display: flex;
   align-items: center;
+  position: relative;
 }
-.biz-auth-title .biz-auth-header img {
+.header img {
   width: 24px;
   height: 24px;
+  cursor: pointer;
 }
-.biz-auth-title .biz-auth-header span {
+.header span {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   color: #212121;
   font-family: Pretendard;
   font-size: 20px;
   font-weight: 600;
   line-height: 28px;
-  margin-left: 112.5px;
 }
 .biz-auth-title .agreement {
   display: flex;

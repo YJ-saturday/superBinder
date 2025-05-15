@@ -1,13 +1,14 @@
 <template>
   <div class="biz-title">
-    <div class="biz-header">
+    <div class="header">
       <img
         src="/src/assets/img/Authentication/leftAllow.png"
-        alt="leftAllow"
+        alt="뒤로가기"
         @click="goBack"
       />
-      <span>회원가입</span>
+      <span>계정관리</span>
     </div>
+
     <div class="biz-main">
       <div class="main-title">약관동의</div>
       <div class="check-item-main">
@@ -81,28 +82,27 @@ const canAgree = computed(() => terms1rd.value && terms2rd.value);
   width: 100%;
   height: 100vh;
 }
-.biz-title .biz-header {
+.header {
   height: 62px;
   padding: 13px 16px;
   display: flex;
   align-items: center;
   position: relative;
 }
-.biz-title .biz-header img {
+.header img {
   width: 24px;
   height: 24px;
+  cursor: pointer;
 }
-.biz-title .biz-header span {
-  color: #212121;
-  font-feature-settings: 'liga' off, 'clig' off;
-  font-family: Pretendard;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 28px;
+.header span {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  color: #212121;
+  font-family: Pretendard;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
 }
 .biz-title .biz-main {
   display: flex;

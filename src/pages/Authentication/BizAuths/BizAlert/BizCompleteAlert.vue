@@ -58,7 +58,8 @@ function goNextPage() {
 .BizAuthAlert .group .action-btn {
   width: 100%;
   height: 48px;
-  color: #222222;
+  color: #fff;
+
   padding: 8px;
   text-align: center;
   font-feature-settings: 'liga' off, 'clig' off;
@@ -69,7 +70,7 @@ function goNextPage() {
   line-height: 22px;
   border-radius: 8px;
   border: 1px solid #c2c2c2;
-  background: #ffffff;
+  background: #222;
   border: none;
 }
 .BizAuthAlert .group .action-btn:hover {

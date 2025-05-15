@@ -1,7 +1,7 @@
 <template>
   <div class="grade-card">
-    <img class="grade-icon" src="@/assets/img/icon/rating.png" alt=""></img>
-    <img src="" alt="" />
+    <!-- 아이콘 등급이미지 클래스로 변경 가능 bronze, seliver, gold, platinum -->
+    <i class="grade-icon bronze"></i>
     <div class="grade-title">실버 등급까지 <span>120만원</span> 남았어요</div>
     <div class="grade-content">
       <div class="grade-subtitle">
@@ -11,10 +11,7 @@
     </div>
   </div>
 </template>
-<script setup>
-
-
-</script>
+<script setup></script>
 <style>
 .grade-card {
   margin-top: 30px;
@@ -27,11 +24,6 @@
   align-items: center;
   border-radius: 30px;
   background: #ffdfdc;
-}
-.grade-card .grade-icon {
-  width: 93px;
-  height: 72px;
-  background: none;
 }
 .grade-card .grade-title {
   color: #222;
@@ -74,5 +66,26 @@
   font-weight: 700;
   line-height: normal;
   padding-left: 10px;
+}
+/* rating */
+.grade-icon {
+  width: 93px;
+  height: 72px;
+}
+.bronze {
+  background: url(@/assets/img/icon/rating.png) no-repeat center center;
+  background-size: contain;
+}
+.seliver {
+  background: url(@/assets/img/rating/guideSeliver.png) no-repeat center center;
+  background-size: contain;
+}
+.gold {
+  background: url(@/assets/img/rating/guideGold.png) no-repeat center center;
+  background-size: contain;
+}
+.platinum {
+  background: url(@/assets/img/rating/guidePlatinum.png) no-repeat center center;
+  background-size: contain;
 }
 </style>

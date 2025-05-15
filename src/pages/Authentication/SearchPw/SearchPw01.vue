@@ -1,9 +1,9 @@
 <template>
   <div class="search-title">
-    <div class="search-header">
+    <div class="header">
       <img
         src="/src/assets/img/Authentication/leftAllow.png"
-        alt="leftAllow"
+        alt="뒤로가기"
         @click="goBack"
       />
       <span>비밀번호 찾기</span>
@@ -76,28 +76,27 @@ const isFormValid = computed(() => searchNumber.value.length === 10);
   width: 100%;
   height: 100vh;
 }
-.search-title .search-header {
+.header {
   height: 62px;
   padding: 13px 16px;
   display: flex;
   align-items: center;
   position: relative;
 }
-.search-title .search-header img {
+.header img {
   width: 24px;
   height: 24px;
+  cursor: pointer;
 }
-.search-title .search-header span {
-  color: #212121;
-  font-feature-settings: 'liga' off, 'clig' off;
-  font-family: Pretendard;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 28px;
+.header span {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  color: #212121;
+  font-family: Pretendard;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
 }
 .search-title .agreement {
   display: flex;

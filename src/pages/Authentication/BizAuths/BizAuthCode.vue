@@ -1,9 +1,9 @@
 <template>
   <div class="biz-code-title">
-    <div class="biz-code-header">
+    <div class="header">
       <img
         src="/src/assets/img/Authentication/leftAllow.png"
-        alt=""
+        alt="뒤로가기"
         @click="goBack"
       />
       <span>회원가입</span>
@@ -84,25 +84,27 @@ const isFormValid = computed(() => {
 .biz-code-title {
   width: 100%;
 }
-.biz-code-title .biz-code-header {
+.header {
   height: 62px;
   padding: 13px 16px;
   display: flex;
   align-items: center;
+  position: relative;
 }
-.biz-code-title .biz-code-header img {
+.header img {
   width: 24px;
   height: 24px;
+  cursor: pointer;
 }
-.biz-code-title .biz-code-header span {
+.header span {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   color: #212121;
-  font-feature-settings: 'liga' off, 'clig' off;
   font-family: Pretendard;
   font-size: 20px;
-  font-style: normal;
   font-weight: 600;
   line-height: 28px;
-  margin-left: 112.5px;
 }
 .biz-code-title .agreement {
   display: flex;

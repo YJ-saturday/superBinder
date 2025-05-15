@@ -16,6 +16,7 @@ import HomePage from "@/pages/HomePage/HomePage.vue";
 
 // AppLayout 없이 사용하는 단독 페이지들
 // SplashScreenPage
+import splashScreen00 from "@/pages/OnBoarding/SplashScreens/splashScreen00.vue";
 import splashScreen01 from "@/pages/OnBoarding/SplashScreens/splashScreen01.vue";
 import splashScreen02 from "@/pages/OnBoarding/SplashScreens/splashScreen02.vue";
 import splashScreen03 from "@/pages/OnBoarding/SplashScreens/splashScreen03.vue";
@@ -104,7 +105,8 @@ const routes = [
   { path: '/search/pw02', name: 'SearchPw02', component: SearchPw02 },
   { path: '/search/pw03', name: 'SearchPw03', component: SearchPw03 },
   { path: '/search/alert', name: 'SearchAlert', component: SearchAlert },
-  // SplashScreenPage
+  // SplashScreenPage(completedadada)
+  { path: '/splash/screen00', name: 'splashScreen00', component: splashScreen00 },
   { path: '/splash/screen01', name: 'splashScreen01', component: splashScreen01 },
   { path: '/splash/screen02', name: 'splashScreen02', component: splashScreen02 },
   { path: '/splash/screen03', name: 'splashScreen03', component: splashScreen03 },

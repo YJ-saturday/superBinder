@@ -76,6 +76,7 @@ const stepList = [
   margin-top: 20px;
 }
 .delivery .steps .step {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
